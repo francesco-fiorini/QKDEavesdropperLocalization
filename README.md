@@ -15,7 +15,7 @@ For installation, please refer to the quantum-solver library presented by Daniel
 
 ## Features
 - Implementation of fiber-based BB84 QKD protocol
-- Channel error model depending on fiber's and receiver's parameters.
+- Channel error model depending on fiber's and receiver's parameters
 - Simulation of a full intercept-resend attack by an eavesdropper placed along the fiber
 - Eeavesdropper position estimation based on QBER statistics
 
