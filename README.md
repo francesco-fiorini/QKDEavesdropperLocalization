@@ -1,7 +1,16 @@
 # QKDEavesdropperLocalization
-# Qiskit Implementation of Eavesdropper Localization method for fiber BB84 Quantum Key Distribution protocol
+# Qiskit Implementation of Fiber-Based BB84 Quantum Key Distribution with Intercept-Resend Attack
 
-This code provides a Qiskit implementation of a statistical method for localizing eavesdroppers along an optical fiber within the framework of the BB84 Quantum Key Distribution protocol. The software simulates the protocol's operations and by leveraging the analytical Quantum Bit Error Rate (QBER) model, it identifies the two candidate positions of an eavesdropper conducting a full intercept-resend attack on the fiber.
+This project provides a **Qiskit-based simulation** of a fiber-based Quantum Key Distribution (QKD) scenario using the BB84 protocol between two parties (Alice and Bob).  
+An eavesdropper (Eve) is modeled performing a full intercept-resend attack on the transmitted qubits.  
+
+Each channel segment introduces a bit-flip error with a probability that depends on the fiber length and the properties of the employed detectors (dark count probability and detection efficiency).  
+
+The tool also supports the simulation of an **asymmetric network scenario**, where the **receiver devices** of the eavesdropper and Bob may have **different characteristics**.  
+
+Finally, this implementation is designed to **localize the position of the eavesdropper** along the fiber, given the sampled QBER (Quantum Bit Error Rate) sample data, using either:  
+- an **analytical/statistical method**, or  
+- a **neural network–based approach**.  
 
 ## Table of Contents
 - [Installation and Usage](#installation-and-usage)
