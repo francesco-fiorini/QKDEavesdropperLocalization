@@ -46,8 +46,6 @@ DATA = {
   'Full key differences': ['-'],
   'Full key length': ['-'],
   'Full key BER': ['-'],
-  'Estimated EVE position 1': ['-'],
-  'Estimated EVE position 2': ['-'],
   'Bob dark count probability': ['-'],
   'Eve dark count probability': ['-'],
   'Bob detector error rate': ['-'],
@@ -261,6 +259,7 @@ class BB84Algorithm:
     return True
   
   
+
 
 
 
