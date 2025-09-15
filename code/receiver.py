@@ -2,7 +2,6 @@
 
 # Author: Francesco Fiorini
 
-# Inspired by: Daniel Escanez-Exposito
 
 from crypto.bb84.participant import Participant
 from qiskit import QuantumCircuit, Aer, transpile
@@ -97,4 +96,5 @@ class Receiver(Participant):
     return message, iteration_times
 
   
+
 
