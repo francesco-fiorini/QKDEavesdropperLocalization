@@ -30,6 +30,7 @@ For installation, please refer to the quantum-solver library presented by Daniel
 - Support for asymmetric network scenarios with heterogeneous device properties
 - Simulation of a full intercept-resend attack by an eavesdropper placed along the fiber
 - Eavesdropper position estimation capability based on QBER sample data (analytical/statistical or neural network–based)
+- Automatically simulates Eve's positions from 1 up to l-1, where l represents the fiber length (km) between Alice and Bob.
 
 ## Contributing
 Contributions are welcome! Please contact francesco.fiorini@phd.unipi.it for suggested changes.
