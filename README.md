@@ -10,7 +10,9 @@ The tool also supports the simulation of an **asymmetric network scenario**, whe
 
 Finally, this implementation is designed to **localize the position of the eavesdropper** along the fiber, given the sample QBER (Quantum Bit Error Rate) data, using either:  
 - an **analytical/statistical method**, or  
-- a **neural network–based approach**.  
+- a **neural network–based approach**.
+
+All simulation parameters and QBER results are stored in an external Excel file.
 
 ## Table of Contents
 - [Installation and Usage](#installation-and-usage)
