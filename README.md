@@ -6,7 +6,7 @@ An eavesdropper (Eve) is modeled performing a full intercept-resend attack on th
 
 Each channel segment introduces a bit-flip error with a probability that depends on the fiber length and the properties of the employed detectors (dark count probability and detection efficiency).  
 
-The tool also supports the simulation of an **asymmetric network scenario**, where the **receiver devices** of the eavesdropper and Bob may have **different characteristics**.  
+The last updated version also supports the simulation of an **asymmetric network scenario**, where the **receiver devices** of the eavesdropper and Bob may have **different characteristics**.  
 
 Finally, this implementation is designed to **localize the position of the eavesdropper** along the fiber, given the sample QBER (Quantum Bit Error Rate) data, using either:  
 - an **analytical/statistical method**, or  
