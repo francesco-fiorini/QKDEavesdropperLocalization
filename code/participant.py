@@ -2,7 +2,7 @@
 
 # Author: Francesco Fiorini
 
-# Inspired by: Daniel Escanez-Exposito
+
 
 from abc import ABC, abstractmethod
 
@@ -100,4 +100,5 @@ class Participant(ABC):
       for i, char in enumerate(message):
         final_message += chr((ord(char) ^ self.otp[i % len(self.otp)]) % CHR_LIMIT)
     return final_message
+
 
