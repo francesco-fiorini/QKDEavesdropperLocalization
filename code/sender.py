@@ -2,7 +2,6 @@
 
 # Author: Francesco Fiorini
 
-# Inspired by: Daniel Escanez-Exposito
 
 from crypto.bb84.participant import Participant
 from qiskit import QuantumCircuit
@@ -41,3 +40,4 @@ class Sender(Participant):
       # time_end
 
     return encoded_message, iteration_times
+
