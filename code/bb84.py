@@ -51,8 +51,6 @@ DATA = {
   'Full key differences': ['-'],
   'Full key length': ['-'],
   'Full key BER': ['-'],
-  'Estimated EVE position 1': ['-'],
-  'Estimated EVE position 2': ['-'],
   'Bob dark count probability': [],
   'Eve dark count probability': [],
   'Bob detector error rate': [],
@@ -256,6 +254,7 @@ class BB84:
         self.__experimental_mode(step_msg, len_msg_limit, density_step, density_min, density_max, repetition_instance)
     else:
       print('[!] Invalid option, try again')
+
 
 
 
