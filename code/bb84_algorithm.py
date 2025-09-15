@@ -2,7 +2,6 @@
 
 # Author: Francesco Fiorini
 
-# Inspired by: Daniel Escanez-Exposito
 
 from qiskit import QuantumCircuit
 from crypto.bb84.sender import Sender
@@ -295,4 +294,5 @@ class BB84Algorithm:
       z2=0
 
     return z1, z2
+
 
