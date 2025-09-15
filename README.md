@@ -8,7 +8,7 @@ Each channel segment introduces a bit-flip error with a probability that depends
 
 The tool also supports the simulation of an **asymmetric network scenario**, where the **receiver devices** of the eavesdropper and Bob may have **different characteristics**.  
 
-Finally, this implementation is designed to **localize the position of the eavesdropper** along the fiber, given the sampled QBER (Quantum Bit Error Rate) sample data, using either:  
+Finally, this implementation is designed to **localize the position of the eavesdropper** along the fiber, given the sample QBER (Quantum Bit Error Rate) data, using either:  
 - an **analytical/statistical method**, or  
 - a **neural network–based approach**.  
 
@@ -20,13 +20,14 @@ Finally, this implementation is designed to **localize the position of the eaves
 
 
 ## Installation and Usage
-For installation, please refer to the quantum-solver library presented by Daniel Escanez-Exposito in https://github.com/jdanielescanez/quantum-solver. The code for this implementation is intended to replace the existing BB84 folder in `quantum-solver/src/crypto`. Therefore, it is required to replace the mentioned folder with the current package 'code' and rename the latter as "bb84".
+For installation, please refer to the quantum-solver library presented by Daniel Escanez-Exposito in https://github.com/jdanielescanez/quantum-solver. The code for this implementation is intended to replace the existing BB84 folder in `quantum-solver/src/crypto`. Therefore, it is required to replace the mentioned folder with the current package `code` and rename the latter as "bb84".
 
 ## Features
 - Implementation of fiber-based BB84 QKD protocol
 - Channel error model depending on fiber's and receiver's parameters
+- Support for asymmetric network scenarios with heterogeneous device properties
 - Simulation of a full intercept-resend attack by an eavesdropper placed along the fiber
-- Eeavesdropper position estimation based on QBER statistics
+- Eavesdropper position estimation capability based on QBER sample data (analytical/statistical or neural network–based)
 
 ## Contributing
 Contributions are welcome! Please contact francesco.fiorini@phd.unipi.it for suggested changes.
