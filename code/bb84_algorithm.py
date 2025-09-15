@@ -164,11 +164,7 @@ class BB84Algorithm:
     sampleQber=float(counter/len(shared_key))
     #d=float(2*(sampleQber-echAB)+2*echAB-1/2)
     d=float(2*(sampleQber)-0.5) # immagino p=1
-    pos1,pos2=self.solve_quadratic(d,Y0B,Y0E,eE,eB,etaE,etaB,c,alpha)
-    DATA["Estimated EVE position 1"]=str(pos1)
-    DATA["Estimated EVE position 2"]=str(pos2)
-    #psample=(sampleQber-ech)/(0.25-ech**2)
-    #print('\nSample p: '+str(psample))
+    
 
     alice_key = alice.show_key()
     bob_key = bob.show_key()
@@ -264,35 +260,7 @@ class BB84Algorithm:
 
     return True
   
-  def solve_quadratic(self,d,Y0B,Y0E,eE,eB,etaE,etaB,c,alpha):
-    # Define the coefficients A, B, and C
-    A = 0.5 * Y0B * etaE - d * Y0B * etaE
-    B = 0.5 * Y0B * Y0E + eB * etaB *etaE *c + eE * etaB * etaE *c - 2 * eB * eE * etaB * etaE * c - d * Y0B * Y0E - d* etaB * etaE * c 
-    C = 0.5 * Y0E * etaB * c - d * Y0E * etaB * c
+  
 
-    # Calculate the discriminant
-    Delta = B**2 - 4 * A * C
-
-    # Check the discriminant to ensure roots are real
-    if Delta < 0:
-        print("The equation has complex roots.")
-        return 0,0
-
-    # Calculate the roots using the quadratic formula
-    sqrt_Delta = np.sqrt(Delta)
-    root1 = (-B + sqrt_Delta) / (2 * A)
-    root2 = (-B - sqrt_Delta) / (2 * A)
-
-    # Calculate z from the roots
-    if root1>0:
-      z1 = -10 * np.log10(root1) / alpha
-    else:
-      z1=0
-    if root2>0:
-      z2 = -10 * np.log10(root2) / alpha
-    else:
-      z2=0
-
-    return z1, z2
 
 
