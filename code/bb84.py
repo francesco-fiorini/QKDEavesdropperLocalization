@@ -2,7 +2,6 @@
 
 # Author: Francesco Fiorini
 
-# Inspired by: Daniel Escanez-Exposito
 
 from quantum_solver.quantum_solver import QuantumSolver
 from crypto.bb84.bb84_algorithm import BB84Algorithm
@@ -262,4 +261,5 @@ class BB84:
         self.__experimental_mode(step_msg, len_msg_limit, density_step, density_min, density_max, repetition_instance)
     else:
       print('[!] Invalid option, try again')
+
 
