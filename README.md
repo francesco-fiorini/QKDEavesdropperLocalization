@@ -20,7 +20,7 @@ Finally, this implementation is designed to **localize the position of the eaves
 
 
 ## Installation and Usage
-For installation, please refer to the quantum-solver library presented by Daniel Escanez-Exposito in https://github.com/jdanielescanez/quantum-solver. The code for this implementation is intended to replace the existing BB84 folder in `quantum-solver/src/crypto`. Therefore, it is required to replace the mentioned folder with the current package bb84Localization and rename the latter as "bb84".
+For installation, please refer to the quantum-solver library presented by Daniel Escanez-Exposito in https://github.com/jdanielescanez/quantum-solver. The code for this implementation is intended to replace the existing BB84 folder in `quantum-solver/src/crypto`. Therefore, it is required to replace the mentioned folder with the current package 'code' and rename the latter as "bb84".
 
 ## Features
 - Implementation of fiber-based BB84 QKD protocol
