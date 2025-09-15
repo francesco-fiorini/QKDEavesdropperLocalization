@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
-# Author: Daniel Escanez-Exposito
+# Author: Francesco Fiorini
+
+# Inspired by: Daniel Escanez-Exposito
 
 from crypto.bb84.participant import Participant
 from qiskit import QuantumCircuit
@@ -37,4 +39,5 @@ class Sender(Participant):
       iteration_times.append(time_ms)
       # print('  Single encode ( X gate:', self.values[i] == 1,',H gate:', self.axes[i] == 1,') run in', str(time_ms), 'ms')
       # time_end
+
     return encoded_message, iteration_times
