@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Author: Francesco Fiorini
-
+# Inspired by: Daniel Escanez-Exposito (https://github.com/jdanielescanez/quantum-solver)
 
 from qiskit import QuantumCircuit
 from crypto.bb84.sender import Sender
@@ -259,6 +259,7 @@ class BB84Algorithm:
     return True
   
   
+
 
 
 
