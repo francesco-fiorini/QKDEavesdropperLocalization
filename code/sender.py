@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Author: Francesco Fiorini
-
+# Inspired by: Daniel Escanez-Exposito (https://github.com/jdanielescanez/quantum-solver)
 
 from crypto.bb84.participant import Participant
 from qiskit import QuantumCircuit
@@ -40,4 +40,5 @@ class Sender(Participant):
       # time_end
 
     return encoded_message, iteration_times
+
 
